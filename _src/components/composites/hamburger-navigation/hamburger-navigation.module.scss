@@ -1,0 +1,25 @@
+.hamburger {
+  &__navigation {
+    background: #fff;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    opacity: .8;
+    transition: all .6s;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  
+    &__open {
+      left: 0;
+    }
+    &__close {
+      left: 100%;
+    }
+  }
+}
+

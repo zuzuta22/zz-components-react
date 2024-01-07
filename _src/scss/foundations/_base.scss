@@ -1,0 +1,13 @@
+@use "../globals/" as g;
+
+html {
+  font-size: 62.5%;
+  font-size: #{g.$default_fz + px};
+}
+body {
+  background-color: #{g.$primary_white};
+  color: var(--base-color);
+}
+img {
+  max-width: 100%;
+}

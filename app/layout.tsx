@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import '../_src/scss/styles.scss';
+import HamburgerNavigation from '@/_src/components/composites/hamburger-navigation/hamburger-navigation';
+import { HamburgerItemsSampleContext } from '@/_src/components/composites/hamburger-navigation/components/hamburger-items/hamburger-items_sample.context';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +13,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  // debug code
+  console.log("render layout.tsx");
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      {/* 
+        components can be chosen from,
+        theme--default,
+        theme-cool,
+        theme--hot.
+        See _src/_scss/_custom_properties.scss
+       */}
+      <body className="theme--cool">
+        <main>
+          <HamburgerNavigation
+            linkItems={HamburgerItemsSampleContext}
+          />
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

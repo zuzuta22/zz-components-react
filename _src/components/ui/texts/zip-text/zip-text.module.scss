@@ -1,0 +1,6 @@
+@use '../../../../scss/globals/' as g;
+
+.zip_text {
+  display: inline-block;
+  font-size: g.$default_fz;
+}
