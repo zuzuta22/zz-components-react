@@ -1,6 +1,8 @@
 "use client";
 
 import AddressBlock from "@/_src/components/composites/address-block/address-block";
+import FaqList from "@/_src/components/composites/faq-list/faq-list";
+import FaqListContainer from "@/_src/components/composites/faq-list/faq-list.container";
 import { AddressText, Copyright, DateText, DynamicTitle, LabelLink, SimpleLabel, ZipText } from "@/_src/components/ui";
 import { FaqAnswer } from "@/_src/components/ui/texts/faq-answer/faq-answer";
 import { FaqQuestion } from "@/_src/components/ui/texts/faq-question/faq-question";
@@ -32,8 +34,12 @@ const PagePlayground = () => {
       {/* <LabelLink text={"Inner Link"} linkTo={"playground"} /> */}
       {/* <LabelLink text={"External Link"} linkTo={"https://google.com"} isExternal={true} /> */}
       {/* <Copyright text={<>&copy; 2011 zuzulabs.net</>} /> */}
-      <FaqQuestion text="Question Text" />
-      <FaqAnswer text={`Answer Text\nAnswer Text test test test \ntesttest`} />
+      {/* <FaqQuestion text="Question Text" />
+      <FaqAnswer text={`Answer Text\nAnswer Text test test test \ntesttest`} /> */}
+      {/* faqItems={[questionText: "question text", answerText: `answer text\nanswertext\answer text answer text`]} */}
+      <FaqListContainer
+        faqItems={[{questionText: {text: "question text"}, answerText: {text: `answer text\nanswertext\answer text answer text` }}]}
+      />
       <p>test</p>
     </>
   )

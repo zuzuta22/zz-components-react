@@ -1,8 +1,8 @@
 import FaqList from "./faq-list";
-import { FaqListType } from "./faq-list.type";
+import { FaqItemsType　} from "./faq-list.type";
 
-const FaqListContainer = (props: FaqListType[]) => {
-  const faqItems = props;
+const FaqListContainer = (props: FaqItemsType) => {
+  const {faqItems} = props;
   return (
     <>
       {faqItems ? (

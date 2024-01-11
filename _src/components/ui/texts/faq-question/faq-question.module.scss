@@ -1,16 +1,20 @@
 @use '../../../../scss/globals/' as g;
 .faq_question {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 4rem;
 
   &::before {
     color: var(--prime-color);
+    background-color: var(--prime-color);
+    border-radius: 50%;
+    color: var(--reverse-color);
     content: "Q";
     @include g.clamp_fontsize(20, 375, 1920, 28);
     font-weight: 700;
     line-height: 1;
+    padding: 3px 5px;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
   }
 }
