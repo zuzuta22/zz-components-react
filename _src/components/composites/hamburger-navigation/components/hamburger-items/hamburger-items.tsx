@@ -1,7 +1,7 @@
-import NavLink from '../../../../ui/links/nav-link';
 
 import { HamburgerNavigationItemType, HamburgerNavigationItemsType } from './hamburger-items.type';
 import styles from "./hamburger-items.module.scss";
+import { NavLink } from '@/_src/components/ui';
 
 const HamburgerItems = (props: HamburgerNavigationItemsType) => {
   const {linkItems, toggleIsHamburgerOpen} = props;

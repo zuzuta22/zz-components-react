@@ -1,0 +1,15 @@
+.lable_link {
+  background-color: var(--prime-color);
+  border-radius: 30px;
+  color: var(--reverse-color);
+  display: block;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: center;
+  transition: all .1s;
+  width: auto;
+  max-width: 8rem;
+  &:hover {
+    opacity: .8;
+  }
+}

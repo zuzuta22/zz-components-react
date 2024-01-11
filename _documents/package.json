@@ -4,14 +4,18 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "default_start": "docusaurus start --port 5101",
+    "start": "run-p default_start watch-docs",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "watch-docs": "chokidar 'docs/**/*.mdx' -c 'npm-run-all --parallel generate-gallery' --ignore '**/index.mdx' --ignoreInitial",
+    "generate-gallery": "ts-node utils/getComponentsGallery.ts"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.6",
@@ -24,6 +28,16 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.0.1",
+    "@docusaurus/tsconfig": "3.0.1",
+    "@docusaurus/types": "3.0.1",
+    "chokidar": "^3.5.3",
+    "chokidar-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.2.2"
   },
   "browserslist": {
     "production": [

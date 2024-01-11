@@ -1,10 +1,10 @@
 "use client";
 
 import useToggleHamburger from "@/_src/hooks/use-toggle-hamburger.hooks"
-import HamburgerButton from "../../ui/buttons/hamburger-button"
 import HamburgerItems from "./components/hamburger-items/hamburger-items";
 import { HamburgerNavigationType } from "./hamburger-navigation.type";
 import styles from "./hamburger-navigation.module.scss";
+import { HamburgerButton } from "../../ui";
 
 const HamburgerNavigation = (props: HamburgerNavigationType) => {
   const {linkItems} = props;

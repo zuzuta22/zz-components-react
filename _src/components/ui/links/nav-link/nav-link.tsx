@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./nav-link.module.scss";
 import { NavLinkType } from "./nav-link.type"
 
-const NavLink = (props: NavLinkType) => {
+export const NavLink = (props: NavLinkType) => {
   const {linkTo, linkName, toggleIsHamburgerOpen} = props;
   return (
     <Link
@@ -14,5 +14,3 @@ const NavLink = (props: NavLinkType) => {
     </Link>
   )
 }
-
-export default NavLink;

@@ -2,6 +2,7 @@
 
 :root {
   --base-color: #2d2d2d;
+  --reverse-color: #fff;
   .theme--default {
     --base-color: #{g.$primary_black};
     --prime-color: #{g.$primary_black};

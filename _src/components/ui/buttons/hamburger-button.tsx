@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./hamburger-button.module.scss";
 import { HamburgeButtonType } from "./hamburger-button.type";
 
-const HamburgerButton = (props: HamburgeButtonType) => {
+export const HamburgerButton = (props: HamburgeButtonType) => {
   const {isHamburgerOpen, toggleIsHamburgerOpen} = props;
 
   // debug code
@@ -25,5 +25,3 @@ const HamburgerButton = (props: HamburgeButtonType) => {
     </>
   )
 }
-
-export default HamburgerButton;

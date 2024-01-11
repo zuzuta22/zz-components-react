@@ -1,7 +1,7 @@
 import { AddressTextType } from "./address-text.type";
 import styles from "./address-text.module.scss";
 
-const AddressText = (props: AddressTextType) => {
+export const AddressText = (props: AddressTextType) => {
   const {address1, address2} = props;
   return (
     <>
@@ -10,5 +10,3 @@ const AddressText = (props: AddressTextType) => {
     </>
   )
 }
-
-export default AddressText;

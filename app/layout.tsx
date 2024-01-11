@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import '../_src/scss/styles.scss';
 import HamburgerNavigation from '@/_src/components/composites/hamburger-navigation/hamburger-navigation';
-import { HamburgerItemsSampleContext } from '@/_src/components/composites/hamburger-navigation/components/hamburger-items/hamburger-items_sample.context';
+import { HamburgerItemsSampleContext } from '@/_src/contexts/samples/hamburger-items_sample.context';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

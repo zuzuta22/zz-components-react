@@ -1,13 +1,20 @@
-@use "../globals/" as g;
+  @use "../globals/" as g;
 
-html {
-  font-size: 62.5%;
-  font-size: #{g.$default_fz + px};
-}
-body {
-  background-color: #{g.$primary_white};
-  color: var(--base-color);
-}
-img {
-  max-width: 100%;
-}
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    background-color: #{g.$primary_white};
+    color: var(--base-color);
+    padding: 1vw 1vh;
+    // font-size: 1.8rem;
+    @include g.clamp_fontsize(16, 375, 1920, 24);
+  }
+  img {
+    max-width: 100%;
+  }
+
+  // Custom Reset
+  dt {
+    font-weight: 500;
+  }
