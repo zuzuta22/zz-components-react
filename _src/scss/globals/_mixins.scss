@@ -11,4 +11,4 @@
   $preferred_vw: ($preferred_vw_base * 100) * 1vw;
   $preferred_rem: ($width_small * -1 * $preferred_vw_base + $fs_min) * .1rem;
   font-size: clamp($fs_min * .1rem, $preferred_rem + $preferred_vw, $fs_max * .1rem);
-  }
+}
