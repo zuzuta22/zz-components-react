@@ -4,8 +4,8 @@
     font-size: 62.5%;
   }
   body {
-    background-color: #{g.$primary_white};
-    color: var(--base-color);
+    background-color: var(--color-background);
+    color: var(--color-base);
     padding: 1vw 1vh;
     // font-size: 1.8rem;
     @include g.clamp_fontsize(16, 375, 1920, 24);

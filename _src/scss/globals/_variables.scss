@@ -7,10 +7,30 @@ $default_fz: 18;
 // ================
 // Colour
 // ================
-$primary_white: #fff;
-$primary_black: #2d2d2d;
-$primary_blue: #004fd2;
-$primary_red: red;
+
+// Base Theme
+$theme-colors: (
+  primary: #2d2d2d,
+  primary_light: lighten(#2d2d2d, 20%),
+  secondary: #fff,
+  success: #004fd2,
+  warning: #f8c11a,
+  danger: #f13245,
+  background: #fff,
+  base: #2d2d2d,
+);
+
+// Cool Theme
+$cool-theme-colors: (
+  primary: #004fd2,
+  primary_light: lighten(#004fd2, 20%),
+  secondary: #fff,
+  success: #004fd2,
+  warning: #f1c339,
+  danger: #f74254,
+  background: #fff,
+  base: #2d2d2d,
+);
 
 // ================
 // view Size

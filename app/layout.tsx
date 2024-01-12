@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '../_src/scss/styles.scss';
 import HamburgerNavigation from '@/_src/components/composites/hamburger-navigation/hamburger-navigation';
 import { HamburgerItemsSampleContext } from '@/_src/contexts/samples/hamburger-items_sample.context';
+import { THEME_COLOR } from './_constants/theme';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,15 +19,11 @@ export default function RootLayout({
   console.log("render layout.tsx");
 
   return (
-    <html lang="en">
+    <html lang="en" data-theme={THEME_COLOR}>
       {/* 
-        components can be chosen from,
-        theme--default,
-        theme-cool,
-        theme--hot.
-        See _src/_scss/_custom_properties.scss
+        THEME_COLOR should be defined in /app/_constants/themes.ts
        */}
-      <body className="theme--cool">
+      <body>
         <main>
           <HamburgerNavigation
             linkItems={HamburgerItemsSampleContext}

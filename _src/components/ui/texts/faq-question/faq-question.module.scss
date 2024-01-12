@@ -4,10 +4,9 @@
   padding-left: 4rem;
 
   &::before {
-    color: var(--prime-color);
-    background-color: var(--prime-color);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
     border-radius: 50%;
-    color: var(--reverse-color);
     content: "Q";
     @include g.clamp_fontsize(20, 375, 1920, 28);
     font-weight: 700;

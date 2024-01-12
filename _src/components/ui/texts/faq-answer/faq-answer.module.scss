@@ -7,8 +7,7 @@
   
   &::before {
     content: 'A';
-    // color: var(--prime-color);
-    color: g.colorMix(g.$primary-blue, 60);
+    color: var(--color-primary_light);
     @include g.clamp_fontsize(20, 375, 1920, 28);
     font-weight: 700;
     line-height: 1;

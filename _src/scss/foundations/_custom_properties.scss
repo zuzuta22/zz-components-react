@@ -1,21 +1,13 @@
 @use "../globals/" as g;
 
 :root {
-  --base-color: #2d2d2d;
-  --reverse-color: #fff;
-  .theme--default {
-    --base-color: #{g.$primary_black};
-    --prime-color: #{g.$primary_black};
-    --border-color: #{g.$primary_black};
+  @each $key, $color in g.$theme-colors {
+    --color-#{$key}: #{$color};
   }
-  .theme--cool {
-    --base-color: #{g.$primary_black};
-    --prime-color: #{g.$primary_blue};
-    --border-color: #{g.$primary_blue};
-  }
-  .theme--hot {
-    --base-color: #{g.$primary_black};
-    --prime-color: #{g.$primary_red};
-    --border-color: #{g.$primary_red};
+
+  &[data-theme='cool'] {
+    @each $key, $color in g.$cool-theme-colors {
+      --color-#{$key}: #{$color};
+    }
   }
 }
