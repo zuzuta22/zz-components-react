@@ -1,0 +1,59 @@
+.text_list {
+  & > li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  & > li::before {
+    content: '';
+    display: block;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    top: 50%;
+    transform: translateY(-50%); 
+    height: 100%;
+    position: absolute;
+    left: -0.5rem;
+  }
+
+  // Modifier
+  &__dotted > li,
+  &__asterisked > li,
+  &__numbered > li {
+    padding-left: 2rem;
+  }
+  &__dotted > li::before {
+    content: '・';
+  }
+  &__asterisked > li::before {
+    content: '※'
+  }
+
+  &__numbered {
+    & > li {
+      counter-increment: index;
+    }
+    & > li::before {
+      content: counter(index)".";
+    }
+  }
+
+  &__alternated {
+    & > li:nth-child(odd) {
+      background-color: var(--color-primary--thin);
+      &::before {
+        background-color: var(--color-primary--thin);
+      }
+    }
+  }
+
+  &__lined {
+    & > li {
+      border-top: 1px solid var(--color-base);
+
+      &:last-child {
+        border-bottom: 1px solid var(--color-base);
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ $default_fz: 18;
 $theme-colors: (
   primary: #2d2d2d,
   primary--light: lighten(#2d2d2d, 20%),
+  primary--thin: lighten(#2d2d2d, 50%),
   secondary: #fff,
   success: #004fd2,
   warning: #f8c11a,
@@ -24,6 +25,7 @@ $theme-colors: (
 $cool-theme-colors: (
   primary: #004fd2,
   primary--light: lighten(#004fd2, 20%),
+  primary--thin: lighten(#004fd2, 50%),
   secondary: #fff,
   success: #004fd2,
   warning: #f1c339,

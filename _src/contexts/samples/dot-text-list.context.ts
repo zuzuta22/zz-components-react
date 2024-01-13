@@ -1,4 +1,4 @@
-import { DotTextListType } from "@/_src/components/composites/lists/dot-text-list/dot-text-list.type";
+import { DotTextListType } from "@/_src/components/composites/lists/text-list-dotted/text-list-dotted.type";
 
 export const dotTextListItemsContext: DotTextListType = {
   listItems: [

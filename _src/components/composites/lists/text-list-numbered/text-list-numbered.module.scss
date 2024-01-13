@@ -1,0 +1,16 @@
+.text_list_numbered {
+  & > li {
+    counter-increment: index;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  & > li::before {
+    content: counter(index)".";
+    position: absolute;
+    left: -1rem;
+  }
+  & > li:last-child {
+    margin-bottom: 0;
+  }
+}

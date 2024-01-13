@@ -1,0 +1,16 @@
+.text_list_dotted {
+  & > li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  & > li::before {
+    content: '・';
+    position: absolute;
+    left: -1rem;
+  }
+  & > li:last-child {
+    margin-bottom: 0;
+  }
+
+}
