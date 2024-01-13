@@ -9,6 +9,7 @@
     padding: 1vw 1vh;
     // font-size: 1.8rem;
     @include g.clamp_fontsize(16, 375, 1920, 24);
+    white-space: pre-wrap;
   }
   img {
     max-width: 100%;

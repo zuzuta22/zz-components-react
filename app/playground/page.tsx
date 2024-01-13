@@ -4,10 +4,12 @@ import AddressBlock from "@/_src/components/composites/address-block/address-blo
 import FaqJson from "@/_src/components/composites/faq-jsonld/faq-jsonld";
 import FaqList from "@/_src/components/composites/faq-list/faq-list";
 import FaqListContainer from "@/_src/components/composites/faq-list/faq-list.container";
+import DotTextList from "@/_src/components/composites/lists/dot-text-list/dot-text-list";
 import { AddressText, Copyright, DateText, DynamicTitle, LabelLink, SimpleLabel, ZipText } from "@/_src/components/ui";
 import { FaqAnswer } from "@/_src/components/ui/texts/faq-answer/faq-answer";
 import { FaqQuestion } from "@/_src/components/ui/texts/faq-question/faq-question";
 import { addressBlockContext } from "@/_src/contexts/samples/address-block.context";
+import { dotTextListItemsContext } from "@/_src/contexts/samples/dot-text-list.context";
 
 const PagePlayground = () => {
   return (
@@ -40,6 +42,8 @@ const PagePlayground = () => {
       />
       <FaqJson />
       <p>test</p>
+      <br />
+      <DotTextList listItems={dotTextListItemsContext.listItems} />
     </>
   )
 }
