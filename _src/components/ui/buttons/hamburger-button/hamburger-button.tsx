@@ -6,7 +6,7 @@ export const HamburgerButton = (props: HamburgeButtonType) => {
   const {isHamburgerOpen, toggleIsHamburgerOpen} = props;
 
   // debug code
-  console.log("Render: HamburgerButton");
+  // console.log("Render: HamburgerButton");
 
   return (
     <>

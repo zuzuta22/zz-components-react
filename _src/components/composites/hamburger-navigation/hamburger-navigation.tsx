@@ -11,7 +11,7 @@ const HamburgerNavigation = (props: HamburgerNavigationType) => {
   const [isHamburgerOpen, toggleIsHamburgerOpen] = useToggleHamburger(false);
 
   // debug code
-  console.log("render Hamburger Navigation");
+  // console.log("render Hamburger Navigation");
   return (
     <div className={styles.hamburger}>
       <HamburgerButton

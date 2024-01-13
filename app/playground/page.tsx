@@ -10,11 +10,13 @@ import DotTextList from "@/_src/components/composites/lists/text-list-dotted/tex
 import TextListNumbered from "@/_src/components/composites/lists/text-list-numbered/text-list-numbered";
 import NumberTextList from "@/_src/components/composites/lists/text-list-numbered/text-list-numbered";
 import TextList from "@/_src/components/composites/lists/text-list/text-list";
+import Table2Columns from "@/_src/components/composites/tables/table-2columns/table-2columns";
 import { AddressText, Copyright, DateText, DynamicTitle, LabelLink, SimpleLabel, ZipText } from "@/_src/components/ui";
 import { FaqAnswer } from "@/_src/components/ui/texts/faq-answer/faq-answer";
 import { FaqQuestion } from "@/_src/components/ui/texts/faq-question/faq-question";
 import { addressBlockContext } from "@/_src/contexts/samples/address-block.context";
 import { dotTextListItemsContext } from "@/_src/contexts/samples/dot-text-list.context";
+import { table2ColumnsContext } from "@/_src/contexts/samples/teble-2columns.context";
 
 const PagePlayground = () => {
   return (
@@ -58,6 +60,8 @@ const PagePlayground = () => {
         listType={"numbered"} 
         styleType={"lined"}
       />
+      <br />
+      <Table2Columns tableItems={table2ColumnsContext.tableItems} />
     </>
   )
 }

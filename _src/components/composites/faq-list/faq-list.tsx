@@ -1,7 +1,6 @@
-import { FaqAnswer } from "../../ui/texts/faq-answer/faq-answer";
-import { FaqQuestion } from "../../ui/texts/faq-question/faq-question";
 import { FaqItemsType, FaqListType } from "./faq-list.type";
 import styles from "./faq-list.module.scss";
+import { FaqAnswer, FaqQuestion } from "../../ui";
 
 const FaqList = (props: FaqItemsType) => {
   const { faqItems } = props;

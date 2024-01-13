@@ -1,6 +1,7 @@
 import { TextListType } from "./text-list.type";
 import styles from "./text-list.module.scss";
-import TextListItem from "@/_src/components/ui/lists/text-list-item/text-list-item";
+import { TextListItem } from "@/_src/components/ui";
+
 
 const TextList = (props: TextListType) => {
   const {listItems, listType, styleType} = props;
@@ -13,7 +14,7 @@ const TextList = (props: TextListType) => {
       <ol className={`${styles[baseClass]}${listType ? ` ${styles[typeModifierClass]}` : ""}${styleType ? ` ${styles[styleModifierClass]}` : ""}`}>
       {listItems.map((item, index) => (
         <TextListItem key={index} text={item.text} />
-      ))}
+      ))} 
     </ol>
     )
   } else {
