@@ -8,7 +8,7 @@ const FaqList = (props: FaqItemsType) => {
   return (
     <>
       {faqItems ? (
-        <dl className={styles.faq_list}>
+        <dl id="faqList" className={styles.faq_list}>
           {faqItems.map((item: FaqListType, index: number) => (
             <div key={index}>
               <FaqQuestion text={item.questionText.text} />

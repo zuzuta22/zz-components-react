@@ -1,14 +1,14 @@
 .lable_link {
-  background-color: var(--prime-color);
+  background-color: var(--color-background);
   border-radius: 30px;
-  color: var(--reverse-color);
+  color: var(--color-primary);
   display: block;
   font-size: 14px;
   padding: 5px 10px;
   text-align: center;
   transition: all .1s;
   width: auto;
-  max-width: 8rem;
+  max-width: 10rem;
   &:hover {
     opacity: .8;
   }
