@@ -1,0 +1,9 @@
+@use "../../../scss/globals/" as g;
+
+.sec {
+  margin-bottom: g.$marginPx__LG;
+
+  @include g.media('md') {
+    margin-bottom: g.$marginPx__XL;
+  }
+}

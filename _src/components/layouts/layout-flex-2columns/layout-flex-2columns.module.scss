@@ -1,0 +1,61 @@
+@use "../../../scss/globals/" as g;
+
+.flex_2columns {
+  display: flex;
+    flex-direction: column;
+  width: 100%;
+
+  @include g.media('md') {
+    flex-direction: row;
+  }
+
+  & > .flex_2columns__left {
+    background-color: green;
+  }
+  & > .flex_2columns__right {
+    background-color: olive;
+  }
+
+  &__3to7 {
+    & > .flex_2columns__left {
+      @include g.media('md') {
+        width: 30%;
+      }
+    }
+    & > .flex_2columns__right {
+      @include g.media('md') {
+        width: 70%;
+      }
+    }
+  }
+
+  &__4to6 {
+    & > .flex_2columns__left {
+      @include g.media('md') {
+        width: 40%;
+      }
+    }
+    & > .flex_2columns__right {
+      @include g.media('md') {
+        width: 60%;
+      }
+    }
+  }
+
+  &__5to5 {
+    & > .flex_2columns__left {
+      @include g.media('md') {
+        width: 50%;
+      }
+    }
+    & > .flex_2columns__right {
+      @include g.media('md') {
+        width: 50%;
+      }
+    }
+  }
+
+  @include g.media('md') {
+    flex-direction: row;
+  }
+}

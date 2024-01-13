@@ -9,23 +9,32 @@ const TextList = (props: TextListType) => {
   const typeModifierClass = baseClass + "__" + listType;
   const styleModifierClass = baseClass + "__" + styleType;
 
-  if (listType == "numbered") {
-    return (
-      <ol className={`${styles[baseClass]}${listType ? ` ${styles[typeModifierClass]}` : ""}${styleType ? ` ${styles[styleModifierClass]}` : ""}`}>
-      {listItems.map((item, index) => (
-        <TextListItem key={index} text={item.text} />
-      ))} 
-    </ol>
-    )
-  } else {
-    return (
-      <ul className={`${styles[baseClass]}${listType ? ` ${styles[typeModifierClass]}` : ""}${styleType ? ` ${styles[styleModifierClass]}` : ""}`}>
-        {listItems.map((item, index) => (
-          <TextListItem key={index} text={item.text} />
-        ))}
-      </ul>
-    )
-  }
+  const DynamicTag = listType === "numbered" ? "ol" : "ul";
+
+  // if (listType == "numbered") {
+  //   return (
+  //     <ol className={`${styles[baseClass]}${listType ? ` ${styles[typeModifierClass]}` : ""}${styleType ? ` ${styles[styleModifierClass]}` : ""}`}>
+  //     {listItems.map((item, index) => (
+  //       <TextListItem key={index} text={item.text} />
+  //     ))} 
+  //   </ol>
+  //   )
+  // } else {
+  //   return (
+  //     <ul className={`${styles[baseClass]}${listType ? ` ${styles[typeModifierClass]}` : ""}${styleType ? ` ${styles[styleModifierClass]}` : ""}`}>
+  //       {listItems.map((item, index) => (
+  //         <TextListItem key={index} text={item.text} />
+  //       ))}
+  //     </ul>
+  //   )
+  // }
+  return (
+    <DynamicTag className={`${styles[baseClass]}${listType ? ` ${styles[typeModifierClass]}` : ""}${styleType ? ` ${styles[styleModifierClass]}` : ""}`}>
+    {listItems.map((item, index) => (
+      <TextListItem key={index} text={item.text} />
+    ))} 
+  </DynamicTag>
+  )
 }
 
 export default TextList;

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import '../_src/scss/styles.scss';
 import HamburgerNavigation from '@/_src/components/composites/hamburger-navigation/hamburger-navigation';
-import { HamburgerItemsSampleContext } from '@/_src/contexts/samples/hamburger-items_sample.context';
-import { THEME_COLOR } from './_constants/theme';
+import { HamburgerItemsSampleContext } from '@/app/playground/sample-contexts/hamburger-items_sample.context';
+import { THEME_COLOR } from '@/_src/constants/theme';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

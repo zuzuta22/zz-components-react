@@ -6,12 +6,13 @@ html {
 body {
   background-color: var(--color-background);
   color: var(--color-base);
-  padding: 3vw 3vh;
   @include g.clamp_fontsize(16, 375, 1920, 24);
   white-space: pre-wrap;
+  min-width: g.$minWidth;
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 // Custom Reset

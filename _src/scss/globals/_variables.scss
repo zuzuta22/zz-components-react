@@ -37,6 +37,47 @@ $cool-theme-colors: (
 );
 
 // ================
+// margin (PX)
+// ================
+$marginPx__XS: 10px;
+$marginPx__SM: 15px;
+$marginPx__MD: 30px;
+$marginPx__LG: 50px;
+$marginPx__XL: 100px;
+
+// ================
+// margin (vw)
+// ================
+$marginVw__XS: 1vw;
+$marginVw__SM: 3vw;
+$marginVw__MD: 5vw;
+$marginVw__LG: 10vw;
+$marginVw__XL: 15vw;
+
+// ================
+// padding (PX)
+// ================
+$paddingPx__XS: 10px;
+$paddingPx__SM: 15px;
+$paddingPx__MD: 30px;
+$paddingPx__LG: 50px;
+$paddingPx__XL: 100px;
+
+// ================
+// padding (vw)
+// ================
+$paddingVw__XS: 1vw;
+$paddingVw__SM: 3vw;
+$paddingVw__MD: 5vw;
+$paddingVw__LG: 10vw;
+$paddingVw__XL: 15vw;
+
+// ================
+// body min-width
+// ================
+$minWidth: 375px;
+
+// ================
 // view Size
 // ================
 $xs: '375px'; // for small screen mobile

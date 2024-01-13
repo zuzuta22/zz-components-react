@@ -8,6 +8,10 @@
 }
 .h2 {
   font-size: 40px;
+  margin-bottom: g.$marginPx__SM;
+  @include g.media('sm') {
+    margin-bottom: g.$marginVw__SM;
+  }
 }
 .h3 {
   font-size: 36px;
