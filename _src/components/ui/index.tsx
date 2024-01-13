@@ -1,5 +1,6 @@
 export * from './buttons/hamburger-button/hamburger-button';
 export * from './buttons/button-link/button-link';
+export * from './buttons/button-to-top/button-to-top';
 export * from './labels/simple-label/simple-label';
 export * from './links/nav-link/nav-link';
 export * from './links/label-link/label-link';

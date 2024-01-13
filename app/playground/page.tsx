@@ -4,7 +4,7 @@ import Table2Columns from "@/_src/components/composites/tables/table-2columns/ta
 import LayoutFlex2Columns from "@/_src/components/layouts/layout-flex-2columns/layout-flex-2columns";
 import LayoutSectionInner from "@/_src/components/layouts/layout-secition-inner/layout-section-inner";
 import LayoutSection from "@/_src/components/layouts/layout-section/layout-section";
-import { ButtonLink, DynamicTitle } from "@/_src/components/ui";
+import { ButtonLink, ButtonToTop, DynamicTitle } from "@/_src/components/ui";
 import ImageResp from "@/_src/components/ui/images/image-resp/image-resp";
 import { dotTextListItemsContext } from "@/app/playground/sample-contexts/dot-text-list.context";
 import { table2ColumnsContext } from "@/app/playground/sample-contexts/teble-2columns.context";
@@ -78,7 +78,7 @@ const PagePlayground = () => {
           type={"round"}
         />
       </LayoutSection>
-      
+      <ButtonToTop />
     </>
   )
 }
