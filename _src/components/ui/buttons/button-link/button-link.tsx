@@ -6,7 +6,7 @@ export const ButtonLink = (props: ButtonLinkType) => {
   const baseClass = "button_link";
   const modifierClass = baseClass + "__" + type;
   return (
-    <button className={`${styles[baseClass]}${type ? ` ${styles[modifierClass]} `: ""}`} aria-label={`button to ${linkTo}`}>
+    <button className={`${styles[baseClass]}${type ? ` ${styles[modifierClass]} `: ""}`} aria-label={text}>
       <a href={linkTo}>{text}</a>
     </button>
   )

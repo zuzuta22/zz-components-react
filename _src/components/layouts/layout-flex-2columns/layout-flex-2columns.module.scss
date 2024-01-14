@@ -10,10 +10,10 @@
   }
 
   & > .flex_2columns__left {
-    background-color: green;
+    background-color: var(--color-background);
   }
   & > .flex_2columns__right {
-    background-color: olive;
+    background-color: var(--color-background);
   }
 
   &__3to7 {

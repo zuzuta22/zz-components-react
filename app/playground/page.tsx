@@ -4,10 +4,11 @@ import Table2Columns from "@/_src/components/composites/tables/table-2columns/ta
 import LayoutFlex2Columns from "@/_src/components/layouts/layout-flex-2columns/layout-flex-2columns";
 import LayoutSectionInner from "@/_src/components/layouts/layout-secition-inner/layout-section-inner";
 import LayoutSection from "@/_src/components/layouts/layout-section/layout-section";
-import { ButtonLink, ButtonToTop, DynamicTitle } from "@/_src/components/ui";
+import { ButtonLink, ButtonToTop, DynamicTitle, InputAddress, InputCheckbox, InputEmail, InputPassword, InputRadio, InputSelect, InputTel, InputText, InputTextArea, InputZip } from "@/_src/components/ui";
 import ImageResp from "@/_src/components/ui/images/image-resp/image-resp";
 import { dotTextListItemsContext } from "@/app/playground/sample-contexts/dot-text-list.context";
 import { table2ColumnsContext } from "@/app/playground/sample-contexts/teble-2columns.context";
+import { inputSelectItemsContext } from "./sample-contexts/input-select.context";
 
 const PagePlayground = () => {
   return (
@@ -79,6 +80,25 @@ const PagePlayground = () => {
         />
       </LayoutSection>
       <ButtonToTop />
+      <LayoutSection>
+        <LayoutSectionInner>
+          <DynamicTitle
+            text={"Forms"}
+            tag={"h2"}
+          />
+          <InputText name="name" labelText={"Input Your Name"} placeholder="Input your name" />
+          <InputPassword name="password" placeholder="Input password" isRequired={true} labelText={"Input Password"} />
+          <InputPassword name="confirm" placeholder="Confirm password" labelText={"Confirm Password"}  />
+          <InputEmail name="email" labelText={"Input Email"}placeholder="Input your email"/>
+          <InputZip name="zip code" labelText={"Input Zip code"}placeholder="Input your Zip code" />
+          <InputAddress name="address" labelText={"Input Your Address"}placeholder="Input your address" />
+          <InputTel name="tel" labelText={"Input Your Phone Number"} placeholder="Input your phone number" />
+          <InputTextArea name="other" labelText={"Input Anything"}placeholder="Input anything" />
+          <InputSelect name="name" labelText={"Choose Option"} selectItems={inputSelectItemsContext} />
+          <InputCheckbox name="name" text={"checkbox choice 1"} value={"value1"} />
+          <InputRadio name="name" text={"radio choice 1"} value={"value1"} />
+        </LayoutSectionInner>
+      </LayoutSection>
     </>
   )
 }
