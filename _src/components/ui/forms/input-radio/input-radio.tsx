@@ -21,6 +21,7 @@ export const InputRadio = (props: InputRadioType) => {
         value={value}
         checked={isActive}
         onChange={() => {}}
+        autoComplete="off"
       />
       <label
         htmlFor={id}

@@ -39,6 +39,7 @@ export const InputPassword = (props: InputPasswordType) => {
         onChange={(e) => setText(e.target.value)}
         onFocus={() => handleOnFocus()}
         onBlur={() => handleOnBlur()}
+        autoComplete={id}
       />
       <span className={styles.input_password__toggle_icon} onClick={handlePasswordRevealed}>
         {isPasswordRevealed ? (<FaRegEyeSlash />) : (<FaRegEye />)}

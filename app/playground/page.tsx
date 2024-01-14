@@ -9,6 +9,8 @@ import ImageResp from "@/_src/components/ui/images/image-resp/image-resp";
 import { dotTextListItemsContext } from "@/app/playground/sample-contexts/dot-text-list.context";
 import { table2ColumnsContext } from "@/app/playground/sample-contexts/teble-2columns.context";
 import { inputSelectItemsContext } from "./sample-contexts/input-select.context";
+import LayoutForm from "@/_src/components/layouts/layout-form/layout-form";
+import { ButtonInput } from "@/_src/components/ui/buttons/button-input/button-input";
 
 const PagePlayground = () => {
   return (
@@ -86,17 +88,20 @@ const PagePlayground = () => {
             text={"Forms"}
             tag={"h2"}
           />
-          <InputText name="name" labelText={"Input Your Name"} placeholder="Input your name" />
-          <InputPassword name="password" placeholder="Input password" isRequired={true} labelText={"Input Password"} />
-          <InputPassword name="confirm" placeholder="Confirm password" labelText={"Confirm Password"}  />
-          <InputEmail name="email" labelText={"Input Email"}placeholder="Input your email"/>
-          <InputZip name="zip code" labelText={"Input Zip code"}placeholder="Input your Zip code" />
-          <InputAddress name="address" labelText={"Input Your Address"}placeholder="Input your address" />
-          <InputTel name="tel" labelText={"Input Your Phone Number"} placeholder="Input your phone number" />
-          <InputTextArea name="other" labelText={"Input Anything"}placeholder="Input anything" />
-          <InputSelect name="name" labelText={"Choose Option"} selectItems={inputSelectItemsContext} />
-          <InputCheckbox name="name" text={"checkbox choice 1"} value={"value1"} />
-          <InputRadio name="name" text={"radio choice 1"} value={"value1"} />
+          <LayoutForm id={"form"} method={"post"}>
+            <InputText id="name" name="name" labelText={"Input Your Name"} placeholder="Input your name" />
+            <InputPassword name="password" placeholder="Input password" isRequired={true} labelText={"Input Password"} />
+            <InputPassword name="confirm" placeholder="Confirm password" labelText={"Confirm Password"}  />
+            <InputEmail name="email" labelText={"Input Email"}placeholder="Input your email"/>
+            <InputZip name="zip code" labelText={"Input Zip code"}placeholder="Input your Zip code" />
+            <InputAddress name="address" labelText={"Input Your Address"}placeholder="Input your address" />
+            <InputTel name="tel" labelText={"Input Your Phone Number"} placeholder="Input your phone number" />
+            <InputTextArea name="other" labelText={"Input Anything"}placeholder="Input anything" />
+            <InputSelect id="option" name="option" labelText={"Choose Option"} selectItems={inputSelectItemsContext} />
+            <InputCheckbox name="check" text={"checkbox choice 1"} value={"value1"} />
+            <InputRadio name="radio" text={"radio choice 1"} value={"value1"} />
+            <ButtonInput id={"formButton"} text={"Send"} type={"round"} />
+          </LayoutForm>
         </LayoutSectionInner>
       </LayoutSection>
     </>

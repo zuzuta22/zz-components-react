@@ -32,6 +32,7 @@ export const InputAddress = (props: InputAddressType) => {
         onChange={(e) => setText(e.target.value)}
         onFocus={() => handleOnFocus()}
         onBlur={() => handleOnBlur()}
+        autoComplete={id}
       />
     </div>
   )

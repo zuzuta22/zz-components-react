@@ -1,0 +1,11 @@
+@use "../../../scss/globals/" as g;
+
+.layout_form {
+  border: 1px solid var(--color-gray--thin);
+  border-radius: 5px;
+  padding: g.$paddingVw__SM;
+
+  & > div:not(:last-child) {
+    margin-bottom: g.$marginVw__SM;
+  }
+}

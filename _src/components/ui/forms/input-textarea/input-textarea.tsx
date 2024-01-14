@@ -32,6 +32,7 @@ export const InputTextArea = (props: InputTextAreaType) => {
         onChange={(e) => setText(e.target.value)}
         onFocus={() => handleOnFocus()}
         onBlur={() => handleOnBlur()}
+        autoComplete="off"
       />
     </div>
   )

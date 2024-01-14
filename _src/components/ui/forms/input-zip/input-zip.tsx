@@ -32,6 +32,7 @@ export const InputZip = (props: InputZipType) => {
         onChange={(e) => setText(e.target.value)}
         onFocus={() => handleOnFocus()}
         onBlur={() => handleOnBlur()}
+        autoComplete={id}
         pattern="^[0-9a-zA-Z\-]+$"
       />
     </div>

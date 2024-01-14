@@ -21,6 +21,7 @@ export const InputCheckbox = (props: InputChecboxType) => {
         value={value}
         checked={isActive}
         onChange={() => {}}
+        autoComplete="off"
       />
       <label
         htmlFor={id}

@@ -33,6 +33,7 @@ export const InputSelect = (props: InputSelectType) => {
         onChange={(e) => setText(e.target.value)}
         onFocus={() => handleOnFocus()}
         onBlur={() => handleOnBlur()}
+        autoComplete={id}
       >
         <option value=""></option>
         {selectItems && selectItems.map((item, index) => (
